@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="calculadora.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="calculadora">
+        <input type="text"  id="parteOndeOsValoresVaoFicar">
+
+        <div id="parteDosbotoesDoCalculo">
+            <div class="linhaDosBotoes">
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('7')" id="numero7" value="7" type="button">7</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('8')" id="numero8" value="8" type="button">8</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('9')" id="numero9" value="9" type="button">9</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('deleter')" id="deleter" type="button"><--</button>
+            </div>
+
+            <div class="linhaDosBotoes">
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('4')" id="numero4" value="4" type="button">4</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('5')" id="numero5" value="5" type="button">5</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('6')" id="numero6" value="6" type="button">6</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora(' + ')" id="soma" type="button">+</button>
+            </div>
+
+            <div class="linhaDosBotoes">
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('1')" id="numero1" value="1" type="button">1</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('2')" id="numero2" value="2" type="button">2</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('3')" id="numero3" value="3" type="button">3</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora(' - ')" id="subtracao" type="button">-</button>
+            </div>
+
+            <div class="linhaDosBotoes">
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('.')" id="ponto" type="button">.</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora('0')" id="numero0"  value="0" type="button">0</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora(' / ')" id="dividi" type="button">/</button>
+                <button class="botoesDaCalculadora" onclick="botoesDaCalculadora(' * ')"  id="multiplica" type="button">x</button>
+            </div>
+
+            <div class="linhaDosBotoes">
+                <button class="botoesDoReset" onclick="botoesDaCalculadora('reset')" id="reset" type="button">reset</button>
+                <button class="botoesDoReset" onclick="botoesDaCalculadora('resultador')" id="botaoDoIgual" type="button">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
